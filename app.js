@@ -55,14 +55,15 @@ if (count == 0) {
 
 countu = 0;
 countl = 0;
-for (var j = 1; j <= prograd1.length; j++) {
+var car = "JaGUar";
+for (var j = 0; j < car.length; j++) {
 
-    if (prograd1[j].toUpperCase() == prograd1[j]) {
+    if (car[j].toUpperCase() == car[j]) {
         countu++;
-        console.log("The Upper case letter is " + prograd1[j]);
+        console.log("The Upper case letter is " + car[j]);
     } else {
         countl++;
-        console.log("The Lower case letter is " + prograd1[j]);
+        console.log("The Lower case letter is " + car[j]);
     }
 
 }
@@ -74,27 +75,18 @@ console.log(countl);
 // Progression 3: Control Statements - 2
 // 3.1 Print all the characters of the driver's name, separated by a space and in capitals i.e. "ProGrad"
 
-var s= "Faceprep";
-var i=0;
-var a=[];
-for(i=0;i<=s.length-1;i++)
-{
-    a[i]=s[i.toUpperCase()=""
-}
-console.log(a);
-for(i=s.length-1=i>=0;i--)
-{
-    reversed+=str;
-    console.log(i);
-}
-}
+var stru = prograd1.toUpperCase();
+var res = stru.split("").join(" ");
+console.log(res);
+
 
 // 3.2 Print all the characters of the navigator's name, in reverse order. i.e. "darGorP"
 
 function reverseString(str){
     return str.split("").reverse().join("");
 }
-reverseString("ProGrad");
+var resr = reverseString(prograd2);
+console.log(resr);
 
 // 3.3 Merge both the characters such that driver is followed by Navigator like "ProGrad FACEPrep"
 // - Now bring the FACEPrep to the start and send ProGrad to the back like "FACEPrep ProGrad"
@@ -103,6 +95,15 @@ reverseString("ProGrad");
 // - The driver's name goes first.
 // - Yo, the navigator goes first definitely.
 // - What?! You both have the same name?
+
+var com = prograd1.localeCompare(prograd2);
+if(com==1)
+console.log(prograd2+"  "+prograd1);
+else if(com==-1)
+console.log(prograd1+" "+prograd2);
+else
+console.log("Both have the same name");
+
 
 // Bonus Time!
 // Bonus 1:
@@ -127,21 +128,6 @@ reverseString("ProGrad");
 
 
 
-var str = "prograd";
-var str1=str.toUpperCase();
-for (var k = 0; k < str1.length; k++) {
-    console.log(str1[k] + " ");
-}
-
-function reverseString(passs) {
-    var newString = "";
-    for (var i = prograd2.length - 1; i--) {
-        newString += str[i];
-    }
-    return newString;
-
-}
-reverseString("Shravya");
 
 //What is the problem
 // i just nw had my dnr nad satrtd my work Okay
